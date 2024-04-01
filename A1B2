@@ -3,13 +3,70 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "bfa57be0-66e7-466e-9528-4cfd3be02695",
+   "id": "785fa86b-cb3d-4779-b984-e4a924ef09ff",
    "metadata": {},
    "outputs": [],
    "source": [
-    "print(\"ID: 123456789\")\n",
-    "print(\"1A2B 作業真簡單\")"
+    "print(\"BC0210020\")"
    ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "ded61934-89ba-459d-b0fa-838ebe72514c",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[5, 6, 4, 8]\n"
+     ]
+    },
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "輸入四個數字 5648\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "5648: 1A0B\n",
+      "5648: 2A0B\n",
+      "5648: 3A0B\n",
+      "5648: 4A0B\n"
+     ]
+    }
+   ],
+   "source": [
+    "import random\n",
+    "answer = random.sample(range(1,10),4)\n",
+    "a = b= n = 0\n",
+    "print (answer)\n",
+    "while a!=4:\n",
+    "    a = b= n = 0\n",
+    "    gamer = list(input('輸入四個數字'))\n",
+    "    for i in gamer:\n",
+    "        if int(gamer[n]) == answer[n]:\n",
+    "            a +=1\n",
+    "        else:\n",
+    "            if int(i) in answer:\n",
+    "                b +=1\n",
+    "        n +=1\n",
+    "        output = ','.join(gamer).replace(',','')\n",
+    "        print(f'{output}: {a}A{b}B')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "4c76834f-e714-4d49-bbcf-2e15967681ba",
+   "metadata": {},
+   "outputs": [],
+   "source": []
   }
  ],
  "metadata": {
@@ -34,3 +91,4 @@
  "nbformat": 4,
  "nbformat_minor": 5
 }
+
